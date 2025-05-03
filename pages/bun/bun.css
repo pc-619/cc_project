@@ -1,0 +1,150 @@
+:root{
+    --primary-color: #222222;
+    --secondary-color: #D9D9D9;
+
+    --text-color: #FFFFFF;
+    --title-color: #FF1E1E;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+    z-index: 1;
+
+    padding: 15px 30px;
+
+    background-color: var(--primary-color);
+    color: var(--text-color);
+
+}
+
+.title {
+    font-weight: bold;
+    font-size: 40px;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+a {
+    font-size: 20px;
+    color: var(--text-color);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+
+img {
+    height: 600px;
+    width: 100vw;
+}
+
+.event-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.promo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    position: absolute;
+    bottom: 100px;
+
+    font-size: 25px;
+    text-align: center;
+    color: var(--text-color);
+    font-weight: bold;
+
+    h2 {
+        color: var(--title-color);
+        font-size: 40px;
+    }
+}
+
+.promo button {
+    margin-top: 100px;
+    height: 80px;
+    width: 200px;
+
+    border: none;
+    background-color: var(--text-color);
+    color: var(--primary-color);
+    font-weight: bold;
+    font-size: 20px;
+
+    transition: color 0.3s ease, background-color 0.3s ease;
+
+}
+
+.promo button:hover {
+    color: var(--text-color);
+    background-color: var(--primary-color);
+
+}
+
+
+.card {
+    height: 120px;
+    width: 100px;
+}
+
+.events {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+
+    box-shadow: 0 1px 5px var(--primary-color);
+    border-top: 2px solid var(--primary-color);
+    border-bottom: 1px solid var(--primary-color);
+}
+
+.event {
+    text-align: center;
+}
+
+
+.fight-card {
+    display: flex;
+    justify-content: center;
+
+    
+
+}
+.fight-card img {
+    height: 600px;
+    width: 500px;
+
+    margin-top: 20px;
+
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    text-align: center;
+
+    border-top: 2px solid var(--primary-color);
+    margin: 20px 50px;
+    min-height: 150px;
+}
+.info h1 {
+
+    margin-bottom: 10px;
+    color: var(--title-color)
+}
